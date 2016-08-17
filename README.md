@@ -15,3 +15,33 @@ To setup the VPN:
 ```
 docker exec -it firefox-vpn openconnect --config=/etc/openconnect/openconnect.conf -b myvpn.com
 ```
+===============================================
+
+pode ser para o chrome
+
+[11:10]  
+funciona ok
+
+[11:11]  
+ele vai pedir uma url do 2nd factor
+
+[11:11]  
+`2fv.agcocorp.com`
+
+[11:11]  
+e vai logar com o atlanta\something
+
+[11:12]  
+`docker exec -it firefox-vpn openconnect --config=/etc/openconnect/openconnect.conf -b myvpn.com`
+
+[11:12]  
+este comando ai não vai funcionar
+
+[11:12]  
+tem q fazer ele em dois steps
+
+[11:12]  
+`docker exec -it firefox-vpn bash` (edited)
+
+[11:12]  
+`openconnect --config=/etc/openconnect/openconnect.conf -b navpn.agcocorp.com`
